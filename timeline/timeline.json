@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "defaultLanguage": "el",
+  "title": {
+    "el": "Το timeline των LLM"
+  },
+  "eras": [
+    {
+      "id": "preparation",
+      "title": {
+        "el": "Προετοιμασία"
+      },
+      "description": {
+        "el": "Η αρχιτεκτονική Transformer και τα πρώτα γενικά γλωσσικά μοντέλα θέτουν τις βάσεις για τις εφαρμογές που θα ακολουθήσουν."
+      },
+      "years": [
+        {
+          "year": 2017,
+          "events": [
+            {
+              "id": "attention-is-all-you-need",
+              "important": true,
+              "date": "2017-06-12",
+              "dateType": "publication",
+              "category": "llm",
+              "title": {
+                "el": "Attention Is All You Need"
+              },
+              "description": {
+                "el": "Παρουσιάζεται από την Google η αρχιτεκτονική Transformer, που θα αποτελέσει τη βάση των σύγχρονων LLM."
+              },
+              "notes": {
+                "el": [
+                  "Το πρώτο γεγονός του timeline είναι η δημόσια δημοσίευση της εργασίας, όχι η ημερομηνία δημιουργίας της αρχιτεκτονικής."
+                ]
+              },
+              "entities": [
+                { "organization": "Google", "name": "Transformer", "type": "architecture" }
+              ],
+              "sources": [
+                "https://arxiv.org/abs/1706.03762"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2018,
+          "events": [
+            {
+              "id": "gpt-1",
+              "date": "2018-06-11",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "GPT-1: ένα γενικό μοντέλο για διαφορετικές εργασίες"
+              },
+              "description": {
+                "el": "Η προεκπαίδευση ενός γενικού γλωσσικού μοντέλου συνδυάζεται με την προσαρμογή του σε διαφορετικές γλωσσικές εργασίες: παραγωγή κειμένου, βασική κατανόηση της γλώσσας και απλές απαντήσεις σε ερωτήσεις."
+              },
+              "notes": {
+                "el": [
+                  "Η εγγραφή βασίζεται στη δημόσια διάθεση της εργασίας και του συστήματος από την OpenAI."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "GPT-1", "type": "model" }
+              ],
+              "sources": [
+                "https://openai.com/index/language-unsupervised/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2019,
+          "events": [
+            {
+              "id": "gpt-2",
+              "date": "2019-11-05",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "GPT-2: συνεκτική παραγωγή εκτενούς κειμένου"
+              },
+              "description": {
+                "el": "Το GPT-2 παράγει πιο συνεκτικά και εκτενή κείμενα, με δυνατότητες περίληψης, απλής μετάφρασης, ταξινόμησης κειμένου και ανάλυσης συναισθήματος. Αυτές οι δυνατότητες ανοίγουν και τη συζήτηση για την κατάχρηση των γεννητικών μοντέλων."
+              },
+              "notes": {
+                "el": [
+                  "Το GPT-2 διατέθηκε σταδιακά μέσα στο 2019. Η ημερομηνία αφορά τη δημόσια διάθεση της μεγαλύτερης έκδοσης, μαζί με τον κώδικα και τα βάρη της."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "GPT-2", "type": "model" }
+              ],
+              "sources": [
+                "https://openai.com/index/gpt-2-1-5b-release/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2021,
+          "events": [
+            {
+              "id": "gpt-3",
+              "date": "2021-11-18",
+              "dateType": "general_availability",
+              "category": "llm",
+              "title": {
+                "el": "GPT-3: διαφορετικές εργασίες μέσα από το prompt"
+              },
+              "description": {
+                "el": "Το GPT-3 μπορεί να εκτελεί εργασίες μόνο με οδηγίες ή λίγα παραδείγματα μέσα στο prompt, χωρίς ξεχωριστή επανεκπαίδευση για κάθε περίπτωση (zero-shot και few-shot learning). Οι δυνατότητές του περιλαμβάνουν μετάφραση, απαντήσεις σε ερωτήσεις, παραγωγή κώδικα και δημιουργία περιεχομένου. Το API γίνεται διαθέσιμο χωρίς λίστα αναμονής."
+              },
+              "notes": {
+                "el": [
+                  "Η δημοσίευση για το GPT-3 και η περιορισμένη beta του API προηγήθηκαν το 2020. Το γεγονός τοποθετείται στο 2021, όταν αφαιρέθηκε η λίστα αναμονής για προγραμματιστές στις υποστηριζόμενες χώρες."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "GPT-3", "type": "model" },
+                { "organization": "OpenAI", "name": "OpenAI API", "type": "platform" }
+              ],
+              "sources": [
+                "https://openai.com/index/api-no-waitlist/",
+                "https://arxiv.org/abs/2005.14165"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "adoption",
+      "title": {
+        "el": "Διάδοση"
+      },
+      "description": {
+        "el": "Με τα μοντέλα διαλόγου (Chat models), η συνομιλία κάνει τα γλωσσικά μοντέλα προσιτά στο ευρύ κοινό. Ακολουθούν εφαρμογές σε αναζήτηση, έγγραφα, αυτοματισμούς και φυσική αλληλεπίδραση με εικόνα και φωνή."
+      },
+      "years": [
+        {
+          "year": 2022,
+          "events": [
+            {
+              "id": "instructgpt",
+              "date": "2022-01-27",
+              "dateType": "general_availability",
+              "category": "llm",
+              "title": {
+                "el": "Τα μοντέλα εκπαιδεύονται να ακολουθούν οδηγίες"
+              },
+              "description": {
+                "el": "Το InstructGPT αποτελεί σημαντικό βήμα από τη συμπλήρωση κειμένου προς χρήσιμες απαντήσεις που ακολουθούν την πρόθεση του χρήστη, με εκπαίδευση από ανθρώπινη ανατροφοδότηση."
+              },
+              "notes": {
+                "el": [
+                  "Η ημερομηνία αφορά τη διάθεση των InstructGPT ως προεπιλεγμένων μοντέλων στο API. Προηγούμενες εκδόσεις είχαν ήδη χρησιμοποιηθεί σε περιορισμένο πλαίσιο. Η σχετική επιστημονική εργασία δημοσιεύτηκε στο arXiv τον Μάρτιο του 2022."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "InstructGPT", "type": "model" }
+              ],
+              "sources": [
+                "https://openai.com/index/instruction-following/",
+                "https://arxiv.org/abs/2203.02155"
+              ]
+            },
+            {
+              "id": "github-copilot",
+              "important": true,
+              "date": "2022-06-21",
+              "dateType": "general_availability",
+              "category": "llm",
+              "title": {
+                "el": "GitHub Copilot: Ο βοηθός προγραμματισμού μπαίνει στον editor"
+              },
+              "description": {
+                "el": "Το GitHub Copilot προτείνει γραμμές και ολόκληρες συναρτήσεις μέσα στο περιβάλλον εργασίας, ενσωματώνοντας τη βοήθεια του γλωσσικού μοντέλου στην καθημερινή συγγραφή κώδικα."
+              },
+              "notes": {
+                "el": [
+                  "Παρουσιάστηκε σε περιορισμένη δοκιμαστική έκδοση στις 29 Ιουνίου 2021. Το γεγονός τοποθετείται στο 2022, όταν έγινε γενικά διαθέσιμο σε μεμονωμένους προγραμματιστές."
+                ]
+              },
+              "entities": [
+                { "organization": "GitHub", "name": "GitHub Copilot", "type": "platform" },
+                { "organization": "OpenAI", "name": "Codex", "type": "model" }
+              ],
+              "sources": [
+                "https://github.blog/news-insights/product-news/github-copilot-is-generally-available-to-all-developers/",
+                "https://github.blog/news-insights/product-news/introducing-github-copilot-ai-pair-programmer/"
+              ]
+            },
+            {
+              "id": "stable-diffusion",
+              "date": "2022-08-22",
+              "dateType": "public_release",
+              "category": "related_generative_ai",
+              "title": {
+                "el": "Δημιουργία εικόνων από περιγραφή"
+              },
+              "description": {
+                "el": "Η γεννητική AI αποκτά μια ορατή, δημιουργική εφαρμογή πέρα από το κείμενο. Η δημόσια διάθεση του Stable Diffusion επιτρέπει τη δημιουργία εικόνων και την τοπική εκτέλεση του μοντέλου."
+              },
+              "notes": {
+                "el": [
+                  "Συναφές ορόσημο της γεννητικής AI: το Stable Diffusion είναι μοντέλο διάχυσης για εικόνες, όχι LLM. Η εγγραφή αφορά τη δημόσια διάθεση, μετά την προηγούμενη πρόσβαση ερευνητών."
+                ]
+              },
+              "entities": [
+                { "organization": "Stability AI / CompVis / Runway", "name": "Stable Diffusion", "type": "model" }
+              ],
+              "sources": [
+                "https://stability.ai/news-updates/stable-diffusion-public-release"
+              ]
+            },
+            {
+              "id": "chatgpt",
+              "important": true,
+              "date": "2022-11-30",
+              "dateType": "public_preview",
+              "category": "llm",
+              "title": {
+                "el": "ChatGPT: η συνομιλία γίνεται η βασική διεπαφή"
+              },
+              "description": {
+                "el": "Το ChatGPT φέρνει τα μοντέλα διαλόγου στο ευρύ κοινό, με ένα Chat model βασισμένο στο GPT-3.5. Ο χρήστης αλληλεπιδρά μέσα από συνομιλία, χωρίς να απαιτείται προγραμματισμός."
+              },
+              "notes": {
+                "el": [
+                  "Η αρχική διάθεση ήταν δωρεάν δημόσια δοκιμαστική έκδοση. Η ημερομηνία αφορά την πρόσβαση στο ChatGPT, όχι την ολοκλήρωση εκπαίδευσης του GPT-3.5."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "ChatGPT", "type": "platform" },
+                { "organization": "OpenAI", "name": "GPT-3.5", "type": "model" }
+              ],
+              "sources": [
+                "https://openai.com/index/chatgpt/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2023,
+          "events": [
+            {
+              "id": "bing-chat",
+              "date": "2023-05-04",
+              "dateType": "public_preview",
+              "category": "llm",
+              "title": {
+                "el": "Η αναζήτηση αποκτά συνομιλία και συνθετικές απαντήσεις"
+              },
+              "description": {
+                "el": "Το νέο Bing συνδέει τον γλωσσικό βοηθό με την αναζήτηση στο web, προσφέροντας συνομιλία και συνθετικές απαντήσεις με παραπομπές σε πηγές."
+              },
+              "notes": {
+                "el": [
+                  "Η παρουσίαση και η περιορισμένη δοκιμαστική πρόσβαση έγιναν τον Φεβρουάριο του 2023. Η ημερομηνία αφορά το άνοιγμα της δοκιμαστικής έκδοσης χωρίς λίστα αναμονής."
+                ]
+              },
+              "entities": [
+                { "organization": "Microsoft", "name": "Bing Chat", "type": "platform" }
+              ],
+              "sources": [
+                "https://blogs.microsoft.com/blog/2023/05/04/announcing-the-next-wave-of-ai-innovation-with-microsoft-bing-and-edge/",
+                "https://blogs.microsoft.com/blog/2023/02/07/reinventing-search-with-a-new-ai-powered-microsoft-bing-and-edge-your-copilot-for-the-web/"
+              ]
+            },
+            {
+              "id": "runway-gen-2",
+              "date": "2023-06",
+              "dateType": "public_release",
+              "category": "related_generative_ai",
+              "title": {
+                "el": "Δημιουργία βίντεο από περιγραφή"
+              },
+              "description": {
+                "el": "Το Gen-2 φέρνει τη δημιουργία βίντεο από περιγραφή σε δημόσια εφαρμογή, διευρύνοντας τις δημιουργικές χρήσεις της γεννητικής AI."
+              },
+              "notes": {
+                "el": [
+                  "Συναφές ορόσημο της γεννητικής AI, όχι κυκλοφορία LLM. Η χρονολόγηση αφορά τη διάθεση στην εφαρμογή της Runway, μετά την προηγούμενη παρουσίαση και την περιορισμένη πρόσβαση."
+                ]
+              },
+              "entities": [
+                { "organization": "Runway", "name": "Gen-2", "type": "model" },
+                { "organization": "Runway", "name": "Runway", "type": "platform" }
+              ],
+              "sources": [
+                "https://runway.com/research/scale-speed-and-stepping-stones-the-path-to-gen-2",
+                "https://runway.com/news/runway-raises-141-million-to-continue-building-the-future-of-creativity"
+              ]
+            },
+            {
+              "id": "llama-open-weights",
+              "date": "2023-07-18",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "Ισχυρά μοντέλα με διαθέσιμα βάρη"
+              },
+              "description": {
+                "el": "Το Llama 2 διευρύνει τη δυνατότητα προσαρμογής και ανεξάρτητης φιλοξενίας ισχυρών γλωσσικών μοντέλων, με διαθέσιμα βάρη και δυνατότητα εμπορικής χρήσης υπό τους όρους της άδειάς του."
+              },
+              "notes": {
+                "el": [
+                  "Το LLaMA είχε προηγηθεί τον Φεβρουάριο του 2023 με πρόσβαση για έρευνα κατόπιν αίτησης. Η εγγραφή χρησιμοποιεί τη δημόσια διάθεση του Llama 2.",
+                  "Ο όρος «διαθέσιμα βάρη» δεν ταυτίζεται αυτόματα με «open source»· κάθε μοντέλο έχει τη δική του άδεια και περιορισμούς."
+                ]
+              },
+              "entities": [
+                { "organization": "Meta", "name": "Llama 2", "type": "model" }
+              ],
+              "sources": [
+                "https://ai.meta.com/blog/llama-2/",
+                "https://ai.meta.com/blog/large-language-model-llama-meta-ai/"
+              ]
+            },
+            {
+              "id": "gpt-4-vision",
+              "date": "2023-09-25",
+              "dateType": "public_rollout",
+              "category": "llm",
+              "title": {
+                "el": "GPT-4: είσοδος εικόνας μαζί με κείμενο"
+              },
+              "description": {
+                "el": "Ο χρήστης μπορεί να δίνει εικόνες μαζί με τις ερωτήσεις του. Η πολυτροπικότητα γίνεται πρακτική δυνατότητα των γενικών γλωσσικών βοηθών."
+              },
+              "notes": {
+                "el": [
+                  "Το GPT-4 παρουσιάστηκε τον Μάρτιο του 2023, αλλά η είσοδος εικόνας δεν ήταν τότε γενικά διαθέσιμη. Η ημερομηνία αφορά την έναρξη της διάθεσης εικόνων στο ChatGPT σε χρήστες Plus και Enterprise, με σταδιακό άνοιγμα μέσα στις επόμενες δύο εβδομάδες."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "GPT-4", "type": "model" },
+                { "organization": "OpenAI", "name": "ChatGPT", "type": "platform" }
+              ],
+              "sources": [
+                "https://openai.com/index/chatgpt-can-now-see-hear-and-speak/",
+                "https://arxiv.org/abs/2303.08774"
+              ]
+            },
+            {
+              "id": "visual-ai-workflows",
+              "date": "2023-10",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "Τα Chat models ενσωματώνονται σε ροές αυτοματισμού"
+              },
+              "description": {
+                "el": "Τα Chat models συνδέονται με άλλες υπηρεσίες και γίνονται μέρος μιας διαδικασίας εργασίας μέσα από πλατφόρμες όπως το n8n, το Flowise και το Make. Οι ροές διευκολύνουν τη δημιουργία εφαρμογών AI και αυτοματισμών."
+              },
+              "notes": {
+                "el": [
+                  "Η χρονολόγηση βασίζεται στη διάθεση της ενσωμάτωσης του LangChain στο n8n τον Οκτώβριο του 2023. Το Flowise και το Make αναφέρονται ως επιπλέον παραδείγματα πλατφορμών· η ημερομηνία δεν αφορά τη δική τους πρώτη διάθεση ή τη δημιουργία τους, ούτε την πρώτη εμφάνιση αυτοματισμών με AI."
+                ]
+              },
+              "entities": [
+                { "organization": "n8n", "name": "n8n", "type": "platform" },
+                { "organization": "FlowiseAI", "name": "Flowise", "type": "platform" },
+                { "organization": "Make", "name": "Make", "type": "platform" },
+                { "organization": "LangChain", "name": "LangChain", "type": "framework" }
+              ],
+              "sources": [
+                "https://blog.n8n.io/n8ns-october-highlights-new-features-refined-cloud-plans-and-workflow-editor-improvements/"
+              ]
+            },
+            {
+              "id": "local-llms",
+              "date": "2023",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "LLM στον δικό σου υπολογιστή"
+              },
+              "description": {
+                "el": "Εργαλεία όπως το Ollama και το LM Studio διευκολύνουν την τοπική εκτέλεση γλωσσικών μοντέλων και τη δημιουργία εφαρμογών πάνω σε προσωπικά δεδομένα και έγγραφα."
+              },
+              "notes": {
+                "el": [
+                  "Καταγράφεται η διάθεση εργαλείων τοπικής εκτέλεσης το 2023, όχι η πρώτη τεχνική δυνατότητα εκτέλεσης LLM σε προσωπικό υπολογιστή.",
+                  "Το Ollama ήταν διαθέσιμο το 2023· η διάθεσή του στα Windows ακολούθησε σε δοκιμαστική έκδοση τον Φεβρουάριο του 2024. Δεν έχει καταγραφεί εδώ ακριβής ημερομηνία της πρώτης κυκλοφορίας."
+                ]
+              },
+              "entities": [
+                { "organization": "Ollama", "name": "Ollama", "type": "platform" },
+                { "organization": "Element Labs", "name": "LM Studio", "type": "platform" }
+              ],
+              "sources": [
+                "https://ollama.com/blog",
+                "https://lmstudio.ai/"
+              ]
+            },
+            {
+              "id": "rag-chatbots",
+              "date": "2023",
+              "dateType": "practical_use",
+              "category": "llm",
+              "title": {
+                "el": "RAG, προσωπική και εταιρική γνώση ως «second brain»"
+              },
+              "description": {
+                "el": "Τα Chat models αξιοποιούν οργανωμένες συλλογές σημειώσεων, εγγράφων και άλλων πηγών ως μια επαναχρησιμοποιήσιμη βάση γνώσης. Με τεχνικές όπως το RAG (Retrieval-Augmented Generation), ανακτούν σχετικές πληροφορίες και βοηθούν τον χρήστη να συνδέει ιδέες και να υποστηρίζει τη σκέψη και τον σχεδιασμό του σε διαφορετικές εργασίες."
+              },
+              "notes": {
+                "el": [
+                  "Η βασική επιστημονική δημοσίευση για το RAG είναι του 2020. Η εγγραφή αφορά τεκμηριωμένες πρακτικές εφαρμογές σε chatbots και εργαλεία του 2023, όχι την εφεύρεση της τεχνικής ή μία μοναδική ημερομηνία κυκλοφορίας.",
+                  "Το NotebookLM άνοιξε τη διάθεσή του στις ΗΠΑ στις 8 Δεκεμβρίου 2023, ως πειραματική εφαρμογή για χρήστες 18 ετών και άνω. Συνδυάζει απαντήσεις με αναφορές στις παρεχόμενες πηγές, σύνθεση πληροφοριών και αποθήκευση σημειώσεων από τις συνομιλίες.",
+                  "Ο όρος «second brain» περιγράφει εδώ τη χρήση μιας διατηρούμενης βάσης γνώσης για ανάκληση και σύνθεση πληροφοριών. Δεν σημαίνει ότι το ίδιο το μοντέλο θυμάται αυτόματα τα πάντα ούτε ότι η ιδέα εμφανίστηκε πρώτη φορά το 2023."
+                ]
+              },
+              "entities": [
+                { "organization": "LangChain", "name": "LangChain", "type": "framework" },
+                { "organization": "Ollama", "name": "Ollama", "type": "platform" },
+                { "organization": "Google", "name": "NotebookLM", "type": "platform" }
+              ],
+              "sources": [
+                "https://www.langchain.com/blog/langchain-state-of-ai-2023",
+                "https://ollama.com/blog",
+                "https://arxiv.org/abs/2005.11401",
+                "https://blog.google/innovation-and-ai/products/notebooklm-new-features-availability/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2024,
+          "events": [
+            {
+              "id": "gemini-google-search",
+              "date": "2024-05-14",
+              "dateType": "public_rollout",
+              "category": "llm",
+              "title": {
+                "el": "Το Gemini ενσωματώνεται στο Google Search"
+              },
+              "description": {
+                "el": "Με τα AI Overviews, το Google Search χρησιμοποιεί ένα προσαρμοσμένο μοντέλο Gemini για να συνθέτει απαντήσεις από πληροφορίες του web, μαζί με συνδέσμους για περαιτέρω αναζήτηση."
+              },
+              "notes": {
+                "el": [
+                  "Η ημερομηνία αφορά την έναρξη της δημόσιας διάθεσης των AI Overviews σε όλους τους χρήστες στις ΗΠΑ. Είχαν προηγηθεί δοκιμές στο Search Labs· η διάθεση σε άλλες χώρες ακολούθησε σταδιακά.",
+                  "Η εγγραφή αφορά την ενσωμάτωση του Gemini στην αναζήτηση, όχι τη δημιουργία του μοντέλου ή την ξεχωριστή εφαρμογή συνομιλίας Gemini."
+                ]
+              },
+              "entities": [
+                { "organization": "Google", "name": "Gemini", "type": "model" },
+                { "organization": "Google", "name": "Google Search", "type": "platform" },
+                { "organization": "Google", "name": "AI Overviews", "type": "capability" }
+              ],
+              "sources": [
+                "https://blog.google/products-and-platforms/products/search/generative-ai-google-search-may-2024/"
+              ]
+            },
+            {
+              "id": "gpt-4o-voice",
+              "date": "2024",
+              "dateType": "public_rollout",
+              "category": "llm",
+              "title": {
+                "el": "Πιο φυσική αλληλεπίδραση με εικόνα και φωνή"
+              },
+              "description": {
+                "el": "Το GPT-4o και οι δυνατότητες συνομιλίας με ήχο σε πραγματικό χρόνο διευρύνουν τη χρήση πέρα από το γραπτό chat, κάνοντας τη φωνητική αλληλεπίδραση πιο άμεση και φυσική."
+              },
+              "notes": {
+                "el": [
+                  "Οι δυνατότητες διατέθηκαν σταδιακά μέσα στο 2024. Η διάθεση του GPT-4o για κείμενο και εικόνα τον Μάιο δεν σήμαινε ταυτόχρονη διάθεση όλων των δυνατοτήτων φωνής και βίντεο.",
+                  "Το Realtime API άνοιξε σε δημόσια beta την 1η Οκτωβρίου 2024. Η εγγραφή χρησιμοποιεί το έτος για να καλύψει τις διαφορετικές διαθέσεις του μοντέλου και των φωνητικών εφαρμογών του."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "GPT-4o", "type": "model" },
+                { "organization": "OpenAI", "name": "ChatGPT", "type": "platform" },
+                { "organization": "OpenAI", "name": "Realtime API", "type": "platform" }
+              ],
+              "sources": [
+                "https://developers.openai.com/api/docs/changelog",
+                "https://openai.com/index/introducing-the-realtime-api/"
+              ]
+            },
+            {
+              "id": "reasoning-models",
+              "important": false,
+              "date": "2024-12-17",
+              "dateType": "general_availability",
+              "category": "llm",
+              "title": {
+                "el": "Μοντέλα ειδικά εκπαιδευμένα για reasoning"
+              },
+              "description": {
+                "el": "Με το o1, ο επιπλέον υπολογισμός πριν από την απάντηση γίνεται διακριτός τρόπος λειτουργίας για σύνθετες εργασίες συλλογισμού και επίλυσης προβλημάτων."
+              },
+              "notes": {
+                "el": [
+                  "Τα o1-preview και o1-mini διατέθηκαν τον Σεπτέμβριο του 2024. Η ημερομηνία αφορά τη διάθεση του πλήρους o1 στο API τον Δεκέμβριο, με τους περιορισμούς πρόσβασης που ίσχυαν τότε."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "o1", "type": "model" }
+              ],
+              "sources": [
+                "https://developers.openai.com/api/docs/changelog"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agentic",
+      "title": {
+        "el": "Agentic"
+      },
+      "description": {
+        "el": "Η μετάβαση ξεκινά το 2024: ο βοηθός συνδέεται με εργαλεία, εκτελεί βήματα και αναλαμβάνει εργασίες με συγκεκριμένο παραδοτέο. Το 2025 και το 2026 επεκτείνεται στον προγραμματισμό, στην καθημερινή εργασία και στη συνεχή υποστήριξη επιχειρησιακών διαδικασιών."
+      },
+      "years": [
+        {
+          "year": 2024,
+          "events": [
+            {
+              "id": "claude-computer-use",
+              "important": false,
+              "date": "2024-10-22",
+              "dateType": "public_preview",
+              "category": "llm",
+              "title": {
+                "el": "Ο βοηθός αρχίζει να χειρίζεται υπολογιστή"
+              },
+              "description": {
+                "el": "Το Claude computer use επιτρέπει σε εφαρμογές να χρησιμοποιούν το μοντέλο για αλληλεπίδραση με οθόνες, πληκτρολόγιο και ποντίκι, περνώντας από τις απαντήσεις στην εκτέλεση ενεργειών."
+              },
+              "notes": {
+                "el": [
+                  "Η ημερομηνία αφορά τη δημόσια beta μέσω API. Πρόκειται για δυνατότητα προς προγραμματιστές, όχι για γενικά διαθέσιμη αυτόνομη desktop εφαρμογή."
+                ]
+              },
+              "entities": [
+                { "organization": "Anthropic", "name": "Claude 3.5 Sonnet", "type": "model" },
+                { "organization": "Anthropic", "name": "Computer use", "type": "capability" }
+              ],
+              "sources": [
+                "https://www.anthropic.com/news/3-5-models-and-computer-use"
+              ]
+            },
+            {
+              "id": "model-context-protocol",
+              "date": "2024-11-25",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "Κοινός τρόπος σύνδεσης με εργαλεία και δεδομένα"
+              },
+              "description": {
+                "el": "Το Model Context Protocol προτείνει ένα ανοιχτό πρωτόκολλο για τη σύνδεση γλωσσικών βοηθών με εργαλεία, εφαρμογές και εξωτερικές πηγές δεδομένων."
+              },
+              "notes": {
+                "el": [
+                  "Η ημερομηνία αφορά τη δημόσια διάθεση του πρωτοκόλλου και των σχετικών εργαλείων, όχι την πρώτη δυνατότητα σύνδεσης ενός LLM με εξωτερικά εργαλεία."
+                ]
+              },
+              "entities": [
+                { "organization": "Anthropic", "name": "Model Context Protocol (MCP)", "type": "protocol" }
+              ],
+              "sources": [
+                "https://www.anthropic.com/news/model-context-protocol"
+              ]
+            },
+            {
+              "id": "gemini-deep-research",
+              "date": "2024-12-11",
+              "dateType": "public_release",
+              "category": "llm",
+              "title": {
+                "el": "Ανάθεση έρευνας πολλών βημάτων"
+              },
+              "description": {
+                "el": "Το Gemini Deep Research αναζητά πηγές και συνθέτει αναφορά, επιτρέποντας την ανάθεση μιας ερευνητικής εργασίας αντί για μία μεμονωμένη ερώτηση."
+              },
+              "notes": {
+                "el": [
+                  "Η αρχική διάθεση έγινε στα αγγλικά σε συνδρομητές Gemini Advanced. Η διαθεσιμότητα μπορεί να ξεκινά σε συγκεκριμένη γλώσσα ή συνδρομή, χωρίς αυτό να σημαίνει ότι είναι διαθέσιμη σε όλους τους χρήστες."
+                ]
+              },
+              "entities": [
+                { "organization": "Google", "name": "Gemini Deep Research", "type": "platform" }
+              ],
+              "sources": [
+                "https://blog.google/products-and-platforms/products/gemini/google-gemini-deep-research/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2025,
+          "events": [
+            {
+              "id": "claude-code",
+              "important": true,
+              "date": "2025-05-22",
+              "dateType": "general_availability",
+              "category": "llm",
+              "title": {
+                "el": "Claude Code: Από προτάσεις κώδικα σε ανάθεση εργασιών προγραμματισμού"
+              },
+              "description": {
+                "el": "Το Claude Code επιτρέπει στον χρήστη να αναθέτει εργασίες προγραμματισμού μέσα από το terminal, με πρόσβαση στα αρχεία και στα εργαλεία του project."
+              },
+              "notes": {
+                "el": [
+                  "Παρουσιάστηκε σε περιορισμένη δοκιμαστική έκδοση στις 24 Φεβρουαρίου 2025. Η ημερομηνία αφορά τη γενική διαθεσιμότητά του στις 22 Μαΐου 2025."
+                ]
+              },
+              "entities": [
+                { "organization": "Anthropic", "name": "Claude Code", "type": "platform" }
+              ],
+              "sources": [
+                "https://www.anthropic.com/news/claude-4",
+                "https://www.anthropic.com/news/claude-3-7-sonnet"
+              ]
+            },
+            {
+              "id": "continuous-business-agents",
+              "date": "2025",
+              "dateType": "practical_use",
+              "category": "llm",
+              "title": {
+                "el": "Agents για τη συνεχή λειτουργία επιχειρησιακών διαδικασιών"
+              },
+              "description": {
+                "el": "Τα Chat models ενσωματώνονται σε συστήματα agents και αυτοματισμών που υποστηρίζουν επαναλαμβανόμενες επιχειρησιακές διαδικασίες, όπως η εξυπηρέτηση πελατών, ο προγραμματισμός ραντεβού και η υποστήριξη πωλήσεων. Νέα αιτήματα, μηνύματα ή αλλαγές δεδομένων ενεργοποιούν εργασίες πολλών βημάτων, με πρόσβαση στην εταιρική γνώση και στα συνδεδεμένα εργαλεία, καθώς και ανθρώπινη παρέμβαση όπου χρειάζεται."
+              },
+              "notes": {
+                "el": [
+                  "Το 2025 χρησιμοποιείται ως έτος τεκμηριωμένων πρακτικών εφαρμογών της τάσης, όχι ως ημερομηνία εφεύρεσης των επιχειρησιακών αυτοματισμών ή πρώτης διάθεσης μιας συγκεκριμένης πλατφόρμας.",
+                  "Το n8n αποτελεί παράδειγμα: οι επίσημοι οδηγοί του Ιανουαρίου και του Φεβρουαρίου 2025 περιγράφουν agents με μνήμη, πρόσβαση σε εταιρικά εργαλεία, triggers και webhooks, καθώς και εφαρμογές σε ραντεβού, πωλήσεις και εξυπηρέτηση πελατών.",
+                  "Η εγγραφή του 2023 αφορά την ενσωμάτωση Chat models σε ροές αυτοματισμού. Εδώ η έμφαση είναι στη διαρκή υποστήριξη μιας επιχειρησιακής διαδικασίας, με κοινή γνώση και κανόνες που αξιοποιούνται καθώς προκύπτουν νέα περιστατικά, πέρα από μια μεμονωμένη ανάθεση project.",
+                  "Οι agents λειτουργούν ως μέρος ενός ευρύτερου συστήματος με εργαλεία, δεδομένα και κανόνες. Δεν υπονοείται ότι ένα Chat model αναλαμβάνει μόνο του ολόκληρο επιχειρησιακό τμήμα."
+                ]
+              },
+              "entities": [
+                { "organization": "n8n", "name": "n8n", "type": "platform" }
+              ],
+              "sources": [
+                "https://blog.n8n.io/llm-agents/",
+                "https://blog.n8n.io/ai-workflows-for-the-cautious-enterprise/"
+              ]
+            }
+          ]
+        },
+        {
+          "year": 2026,
+          "events": [
+            {
+              "id": "personal-assistants",
+              "date": "2026",
+              "dateType": "documented_availability",
+              "category": "llm",
+              "title": {
+                "el": "Personal Assistants: προσωπικοί βοηθοί με μνήμη και εργαλεία"
+              },
+              "description": {
+                "el": "Προσωπικοί βοηθοί όπως το OpenClaw και το Hermes Agent συνδυάζουν Chat models, μνήμη και εργαλεία για να αναλαμβάνουν καθημερινές εργασίες. Διατηρούν πληροφορίες από προηγούμενες συνομιλίες, επικοινωνούν μέσα από εφαρμογές μηνυμάτων και εκτελούν ενέργειες ή προγραμματισμένους αυτοματισμούς."
+              },
+              "notes": {
+                "el": [
+                  "Οι δύο πλατφόρμες ομαδοποιούνται ως παραδείγματα προσωπικών βοηθών που διατηρούν συνέχεια μεταξύ συνομιλιών και μπορούν να εκτελούν εργασίες, πέρα από την παροχή μιας μεμονωμένης απάντησης.",
+                  "Το OpenClaw είχε προηγηθεί ως Clawdbot το 2025. Το όνομα OpenClaw υιοθετήθηκε στις 29 Ιανουαρίου 2026. Το Hermes Agent διατέθηκε στις 25 Φεβρουαρίου 2026.",
+                  "Η κοινή εγγραφή παραμένει στο 2026, όταν ήταν διαθέσιμα και τα δύο παραδείγματα. Δεν σημαίνει ότι οι προσωπικοί βοηθοί ή το OpenClaw εμφανίστηκαν πρώτη φορά το 2026.",
+                  "Το Hermes εδώ είναι το Hermes Agent της Nous Research, όχι η ομώνυμη σειρά γλωσσικών μοντέλων."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenClaw", "name": "OpenClaw", "type": "platform" },
+                { "organization": "Nous Research", "name": "Hermes Agent", "type": "platform" }
+              ],
+              "sources": [
+                "https://openclaw.ai/",
+                "https://openclaw.ai/blog/introducing-openclaw",
+                "https://nousresearch.com/releases",
+                "https://hermes-agent.nousresearch.com/docs/",
+                "https://github.com/NousResearch/hermes-agent"
+              ]
+            },
+            {
+              "id": "codex-desktop",
+              "date": "2026",
+              "dateType": "documented_availability",
+              "category": "llm",
+              "title": {
+                "el": "Desktop περιβάλλον για συνεργασία με coding agents"
+              },
+              "description": {
+                "el": "Το Codex app και το Claude Desktop, μέσω της ενσωμάτωσης του Claude Code, προσφέρουν desktop περιβάλλοντα για ανάθεση εργασιών προγραμματισμού και διαχείριση παράλληλων συνεδριών με coding agents."
+              },
+              "notes": {
+                "el": [
+                  "Το Codex app διατέθηκε αρχικά στις 2 Φεβρουαρίου 2026 για macOS. Η εγγραφή δεν αφορά την πρώτη εμφάνιση του ονόματος Codex, του μοντέλου του 2021 ή των μεταγενέστερων CLI και cloud εργαλείων.",
+                  "Το Claude Code έγινε διαθέσιμο μέσα στο Claude Desktop στις 24 Νοεμβρίου 2025, με δυνατότητα παράλληλων τοπικών και απομακρυσμένων συνεδριών. Εδώ καταγράφεται αυτή η ενσωμάτωση για προγραμματισμό, όχι η πρώτη διάθεση της εφαρμογής Claude Desktop ή το Cowork.",
+                  "Η κοινή εγγραφή παραμένει στο 2026, όταν ήταν διαθέσιμα και τα δύο παραδείγματα. Χρησιμοποιεί μόνο το έτος, ώστε να μην αποδίδεται η ημερομηνία διάθεσης του Codex app και στο Claude Desktop."
+                ]
+              },
+              "entities": [
+                { "organization": "OpenAI", "name": "Codex app", "type": "platform" },
+                { "organization": "Anthropic", "name": "Claude Desktop (Claude Code)", "type": "platform" }
+              ],
+              "sources": [
+                "https://learn.chatgpt.com/docs/changelog",
+                "https://www.anthropic.com/news/claude-opus-4-5"
+              ]
+            },
+            {
+              "id": "claude-cowork",
+              "date": "2026",
+              "dateType": "documented_availability",
+              "category": "llm",
+              "title": {
+                "el": "Ανάθεση καθημερινής εργασίας σε agents"
+              },
+              "description": {
+                "el": "Το Claude Cowork και το ChatGPT Work επεκτείνουν τη συνεργασία με agents πέρα από τον προγραμματισμό: ο χρήστης αναθέτει εργασίες με σαφές αποτέλεσμα, χρησιμοποιώντας αρχεία, έγγραφα, συνδεδεμένα εργαλεία και εφαρμογές για τη δημιουργία παραδοτέων και την εκτέλεση διαδικασιών."
+              },
+              "notes": {
+                "el": [
+                  "Οι δύο πλατφόρμες ομαδοποιούνται ως παραδείγματα της ίδιας αλλαγής χρήσης: από τη συνομιλία στην ανάθεση καθημερινής εργασίας με συγκεκριμένο παραδοτέο.",
+                  "Το Claude Cowork έγινε γενικά διαθέσιμο στις 9 Απριλίου 2026 σε όλα τα πληρωμένα πακέτα, μέσω της desktop εφαρμογής για macOS και Windows. Η αρχική δοκιμαστική διάθεση είχε προηγηθεί τον Ιανουάριο του 2026.",
+                  "Για το ChatGPT Work καταγράφεται τεκμηριωμένη διαθεσιμότητα μέσα στο 2026. Δεν έχει τεκμηριωθεί εδώ η ακριβής ημερομηνία πρώτης διάθεσης. Η κοινή εγγραφή χρησιμοποιεί μόνο το έτος, ώστε να μην αποδίδεται η ημερομηνία του Cowork και στις δύο πλατφόρμες."
+                ]
+              },
+              "entities": [
+                { "organization": "Anthropic", "name": "Claude Cowork", "type": "platform" },
+                { "organization": "OpenAI", "name": "ChatGPT Work", "type": "platform" }
+              ],
+              "sources": [
+                "https://claude.com/blog/cowork-for-enterprise",
+                "https://www.anthropic.com/news/introducing-anthropic-labs",
+                "https://learn.chatgpt.com/docs/get-started-with-work"
+              ]
+            },
+            {
+              "id": "decision-models",
+              "date": "2026",
+              "dateType": "documented_availability",
+              "category": "llm",
+              "title": {
+                "el": "Decision models: πολύ γρήγορες αποφάσεις μέσα στις εφαρμογές"
+              },
+              "description": {
+                "el": "Το Jev της TypeSafe και το Decisions API της OpenAI επιτρέπουν πολύ γρήγορες, δομημένες αποφάσεις: επιλογή ανάμεσα σε προκαθορισμένες επιλογές, έλεγχο συνθηκών, ταξινόμηση και βαθμολόγηση. Έτσι, εφαρμογές και agents μπορούν να επιλέγουν το επόμενο βήμα μιας ροής εργασίας με μικρή καθυστέρηση."
+              },
+              "notes": {
+                "el": [
+                  "Το Jev είναι μοντέλο αποφάσεων της TypeSafe. Το Decisions API είναι η αντίστοιχη διεπαφή της OpenAI για δομημένες αποφάσεις, όχι το όνομα ενός ξεχωριστού μοντέλου.",
+                  "Κατά την καταγραφή, στις 8 Οκτωβρίου 2026, το Decisions API διατίθεται σε δημόσια beta και υποστηρίζει το GPT-6 Luna. Δεν παρουσιάζεται ως γενικά διαθέσιμη τελική έκδοση.",
+                  "Η κοινή εγγραφή χρησιμοποιεί το έτος τεκμηριωμένης διάθεσης, χωρίς να αποδίδει την ίδια ακριβή ημερομηνία κυκλοφορίας και στις δύο υπηρεσίες."
+                ]
+              },
+              "entities": [
+                { "organization": "TypeSafe", "name": "Jev", "type": "model" },
+                { "organization": "OpenAI", "name": "Decisions API", "type": "platform" }
+              ],
+              "sources": [
+                "https://typesafe.ai/",
+                "https://developers.openai.com/api/docs/guides/decisions"
+              ]
+            }
+
+          ]
+        }
+      ]
+    }
+  ]
+}

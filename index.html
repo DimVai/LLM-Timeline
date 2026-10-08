@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#090d17">
+    <meta name="description" content="Τα σημαντικά ορόσημα των μεγάλων γλωσσικών μοντέλων. Από την αρχιτεκτονική Transformer στις εφαρμογές και τους AI agents.">
+    <title>Το timeline των LLM</title>
+    <link rel="icon" href="resources/logo.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="resources/style.css">
+    <script defer src="resources/script.js"></script>
+</head>
+<body id="top">
+    <a class="skip-link" href="#timeline" data-i18n="skip">Μετάβαση στο timeline</a>
+    <header id="page-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="LLM Timeline">
+                <img src="resources/logo.svg" width="34" height="34" alt="">
+                <span>LLM<span class="brand-divider">/</span><span class="brand-light">TIMELINE</span></span>
+            </a>
+            <div class="header-actions">
+                <a class="header-link" href="#timeline" data-i18n="timeline">Χρονολόγιο</a>
+                <div class="language-switch" role="group" aria-label="Γλώσσα" data-i18n-aria="language">
+                    <button type="button" data-language="el" aria-pressed="true" aria-label="Ελληνικά" lang="el">EL</button>
+                    <button type="button" data-language="en" aria-pressed="false" aria-label="English" lang="en" disabled title="Η αγγλική μετάφραση θα προστεθεί σύντομα">EN</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero container" aria-labelledby="site-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> LARGE LANGUAGE MODELS</p>
+                <h1 id="site-title">Το timeline των <span>LLM</span></h1>
+                <p class="hero-description" data-i18n="intro">Οι στιγμές που άλλαξαν τον τρόπο που χρησιμοποιούμε την τεχνητή νοημοσύνη.</p>
+                <div class="hero-bottom">
+                    <a class="explore-link" href="#timeline"><span data-i18n="explore">Ακολούθησε την εξέλιξη</span><span aria-hidden="true">↓</span></a>
+                    <p class="timeline-stats" id="timeline-stats"></p>
+                </div>
+            </div>
+            <div class="hero-art" aria-hidden="true">
+                <svg viewBox="0 0 380 280" fill="none">
+                    <defs>
+                        <linearGradient id="circuit-gradient" x1="40" y1="40" x2="340" y2="240" gradientUnits="userSpaceOnUse"><stop stop-color="#36c9ff"/><stop offset="1" stop-color="#ff299c"/></linearGradient>
+                        <radialGradient id="circuit-glow"><stop stop-color="#36c9ff" stop-opacity=".13"/><stop offset="1" stop-color="#36c9ff" stop-opacity="0"/></radialGradient>
+                    </defs>
+                    <circle cx="190" cy="140" r="135" fill="url(#circuit-glow)"/>
+                    <g stroke="#34435b" stroke-width="1">
+                        <path d="M40 65H105L155 115M40 215H100L150 165M340 65H280L230 115M340 215H280L230 165M190 15V90M190 190V265"/>
+                        <path d="M70 140H140M240 140H310M105 40L145 80M275 40L235 80M105 240L145 200M275 240L235 200"/>
+                        <rect x="105" y="55" width="170" height="170" rx="38" transform="rotate(45 190 140)" stroke-dasharray="3 9"/>
+                    </g>
+                    <rect x="140" y="90" width="100" height="100" rx="24" fill="#101827" stroke="url(#circuit-gradient)"/>
+                    <path d="M170 116V164H184M200 116V164H214M165 140H216" stroke="url(#circuit-gradient)" stroke-width="3" stroke-linecap="round"/>
+                    <g fill="#36c9ff"><circle cx="40" cy="65" r="4"/><circle cx="70" cy="140" r="3"/><circle cx="190" cy="15" r="4"/><circle cx="275" cy="40" r="3"/></g>
+                    <g fill="#ff299c"><circle cx="340" cy="215" r="4"/><circle cx="310" cy="140" r="3"/><circle cx="190" cy="265" r="4"/><circle cx="105" cy="240" r="3"/></g>
+                    <g fill="#c5cedb"><circle cx="340" cy="65" r="3"/><circle cx="40" cy="215" r="3"/></g>
+                </svg>
+                <span class="art-caption">RESEARCH → MODELS → AGENTS</span>
+            </div>
+        </section>
+
+        <nav class="year-navigation" aria-label="Πλοήγηση ανά έτος" data-i18n-aria="yearNavigation">
+            <div class="container year-navigation-inner">
+                <span class="nav-caption" data-i18n="timeline">Χρονολόγιο</span>
+                <div id="year-links" class="year-links"></div>
+                <span class="nav-direction" aria-hidden="true">↓</span>
+            </div>
+        </nav>
+
+        <section id="timeline" aria-label="Γεγονότα του timeline" data-i18n-aria="timelineLabel" tabindex="-1">
+            <div class="container column-headings" aria-hidden="true">
+                <span data-i18n="year">Έτος</span>
+                <span data-i18n="milestones">Σημαντικά γεγονότα</span>
+                <span data-i18n="entities">Μοντέλα & πλατφόρμες</span>
+            </div>
+            <p id="load-status" class="container load-status" role="status" data-i18n="loading">Φόρτωση του timeline…</p>
+            <div id="timeline-content"></div>
+        </section>
+        <noscript><p class="container load-status">Ενεργοποίησε τη JavaScript για να εμφανιστεί το timeline.</p></noscript>
+        <p class="sr-only" id="language-status" role="status"></p>
+    </main>
+
+    <footer id="page-footer">
+        <div class="container footer-inner">
+            <p><span class="footer-mark">LLM / TIMELINE</span><span class="footer-caption" data-i18n="footer">Μια διαδρομή που συνεχίζεται.</span></p>
+            <a href="#top" class="back-to-top"><span data-i18n="backToTop">Στην αρχή</span><span aria-hidden="true">↑</span></a>
+        </div>
+    </footer>
+</body>
+</html>
