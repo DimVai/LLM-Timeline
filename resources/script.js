@@ -12,7 +12,7 @@
             details: 'Σημειώσεις & πηγές', related: 'Συναφής γεννητική AI',
             important: 'Σημαντικό ορόσημο',
             source: 'Πηγή', event: 'γεγονός', events: 'γεγονότα', milestoneCount: 'ορόσημα',
-            englishPending: 'Η αγγλική μετάφραση θα προστεθεί σύντομα',
+            translationUnavailable: 'Η μετάφραση δεν είναι ακόμη πλήρης',
             languageChanged: 'Το περιεχόμενο εμφανίζεται στα ελληνικά.',
             loadError: 'Δεν ήταν δυνατή η φόρτωση του timeline.',
             localFile: 'Άνοιξε τη σελίδα μέσω τοπικού HTTP server για να φορτωθεί το αρχείο δεδομένων.',
@@ -34,7 +34,7 @@
             details: 'Notes & sources', related: 'Related generative AI',
             important: 'Major milestone',
             source: 'Source', event: 'event', events: 'events', milestoneCount: 'milestones',
-            englishPending: 'The English translation is coming soon',
+            translationUnavailable: 'This translation is not complete yet',
             languageChanged: 'Content is now displayed in English.',
             loadError: 'The timeline could not be loaded.',
             localFile: 'Open this page through a local HTTP server to load the data file.',
@@ -51,9 +51,16 @@
     const content = document.getElementById('timeline-content');
     const yearLinks = document.getElementById('year-links');
     const status = document.getElementById('load-status');
+    const languageStorageKey = 'llm-timeline-lang';
     let data;
-    let language = 'el';
-    let availableLanguages = ['el'];
+    let language = 'en';
+    try {
+        const savedLanguage = localStorage.getItem(languageStorageKey);
+        if (savedLanguage === 'el' || savedLanguage === 'en') language = savedLanguage;
+    } catch {
+        // Keep the English default if browser storage is unavailable.
+    }
+    let availableLanguages = [];
     let yearGroups = [];
     let scrollQueued = false;
 
@@ -92,7 +99,7 @@
             const locale = button.dataset.language;
             button.disabled = !data || !availableLanguages.includes(locale);
             button.setAttribute('aria-pressed', String(locale === language));
-            button.title = locale === 'en' && button.disabled ? t('englishPending') : '';
+            button.title = data && button.disabled ? t('translationUnavailable') : '';
         });
         document.querySelector('meta[name="description"]').content = t('intro');
         if (!data) return;
@@ -263,6 +270,11 @@
         }
         updateActiveYear();
         document.getElementById('language-status').textContent = t('languageChanged');
+        try {
+            localStorage.setItem(languageStorageKey, language);
+        } catch {
+            // Switching still works when the browser blocks storage.
+        }
     }
 
     async function loadTimeline() {
@@ -274,7 +286,9 @@
             if (!Array.isArray(payload.eras)) throw new Error('Missing eras');
             data = payload;
             availableLanguages = Object.keys(copy).filter(hasTranslation);
-            language = availableLanguages.includes(data.defaultLanguage) ? data.defaultLanguage : 'el';
+            if (!availableLanguages.includes(language)) {
+                language = availableLanguages.includes('en') ? 'en' : (availableLanguages[0] ?? 'en');
+            }
             updateInterface();
             renderTimeline();
             status.textContent = '';

@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="el">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#090d17">
-    <meta name="description" content="Τα σημαντικά ορόσημα των μεγάλων γλωσσικών μοντέλων. Από την αρχιτεκτονική Transformer στις εφαρμογές και τους AI agents.">
-    <title>Το timeline των LLM</title>
+    <meta name="description" content="The moments that changed the way we use artificial intelligence.">
+    <title>The LLM timeline</title>
     <link rel="icon" href="resources/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="resources/style.css">
     <script defer src="resources/script.js"></script>
 </head>
 <body id="top">
-    <a class="skip-link" href="#timeline" data-i18n="skip">Μετάβαση στο timeline</a>
+    <a class="skip-link" href="#timeline" data-i18n="skip">Skip to timeline</a>
     <header id="page-header">
         <div class="container header-inner">
             <a class="brand" href="index.html" aria-label="LLM Timeline">
@@ -19,10 +19,10 @@
                 <span>LLM<span class="brand-divider">/</span><span class="brand-light">TIMELINE</span></span>
             </a>
             <div class="header-actions">
-                <a class="header-link" href="#timeline" data-i18n="timeline">Χρονολόγιο</a>
-                <div class="language-switch" role="group" aria-label="Γλώσσα" data-i18n-aria="language">
-                    <button type="button" data-language="el" aria-pressed="true" aria-label="Ελληνικά" lang="el">EL</button>
-                    <button type="button" data-language="en" aria-pressed="false" aria-label="English" lang="en" disabled title="Η αγγλική μετάφραση θα προστεθεί σύντομα">EN</button>
+                <a class="header-link" href="#timeline" data-i18n="timeline">Timeline</a>
+                <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="language">
+                    <button type="button" data-language="el" aria-pressed="false" aria-label="Ελληνικά" lang="el" disabled>EL</button>
+                    <button type="button" data-language="en" aria-pressed="true" aria-label="English" lang="en" disabled>EN</button>
                 </div>
             </div>
         </div>
@@ -32,10 +32,10 @@
         <section class="hero container" aria-labelledby="site-title">
             <div class="hero-copy">
                 <p class="eyebrow"><span class="status-dot"></span> LARGE LANGUAGE MODELS</p>
-                <h1 id="site-title">Το timeline των <span>LLM</span></h1>
-                <p class="hero-description" data-i18n="intro">Οι στιγμές που άλλαξαν τον τρόπο που χρησιμοποιούμε την τεχνητή νοημοσύνη.</p>
+                <h1 id="site-title">The <span>LLM</span> timeline</h1>
+                <p class="hero-description" data-i18n="intro">The moments that changed the way we use artificial intelligence.</p>
                 <div class="hero-bottom">
-                    <a class="explore-link" href="#timeline"><span data-i18n="explore">Ακολούθησε την εξέλιξη</span><span aria-hidden="true">↓</span></a>
+                    <a class="explore-link" href="#timeline"><span data-i18n="explore">Follow the evolution</span><span aria-hidden="true">↓</span></a>
                     <p class="timeline-stats" id="timeline-stats"></p>
                 </div>
             </div>
@@ -61,31 +61,31 @@
             </div>
         </section>
 
-        <nav class="year-navigation" aria-label="Πλοήγηση ανά έτος" data-i18n-aria="yearNavigation">
+        <nav class="year-navigation" aria-label="Navigate by year" data-i18n-aria="yearNavigation">
             <div class="container year-navigation-inner">
-                <span class="nav-caption" data-i18n="timeline">Χρονολόγιο</span>
+                <span class="nav-caption" data-i18n="timeline">Timeline</span>
                 <div id="year-links" class="year-links"></div>
                 <span class="nav-direction" aria-hidden="true">↓</span>
             </div>
         </nav>
 
-        <section id="timeline" aria-label="Γεγονότα του timeline" data-i18n-aria="timelineLabel" tabindex="-1">
+        <section id="timeline" aria-label="Timeline events" data-i18n-aria="timelineLabel" tabindex="-1">
             <div class="container column-headings" aria-hidden="true">
-                <span data-i18n="year">Έτος</span>
-                <span data-i18n="milestones">Σημαντικά γεγονότα</span>
-                <span data-i18n="entities">Μοντέλα & πλατφόρμες</span>
+                <span data-i18n="year">Year</span>
+                <span data-i18n="milestones">Key milestones</span>
+                <span data-i18n="entities">Models & platforms</span>
             </div>
-            <p id="load-status" class="container load-status" role="status" data-i18n="loading">Φόρτωση του timeline…</p>
+            <p id="load-status" class="container load-status" role="status">Loading the timeline…</p>
             <div id="timeline-content"></div>
         </section>
-        <noscript><p class="container load-status">Ενεργοποίησε τη JavaScript για να εμφανιστεί το timeline.</p></noscript>
+        <noscript><p class="container load-status">Enable JavaScript to view the timeline.</p></noscript>
         <p class="sr-only" id="language-status" role="status"></p>
     </main>
 
     <footer id="page-footer">
         <div class="container footer-inner">
-            <p><span class="footer-mark">LLM / TIMELINE</span><span class="footer-caption" data-i18n="footer">Μια διαδρομή που συνεχίζεται.</span></p>
-            <a href="#top" class="back-to-top"><span data-i18n="backToTop">Στην αρχή</span><span aria-hidden="true">↑</span></a>
+            <p><span class="footer-mark">LLM / TIMELINE</span><span class="footer-caption" data-i18n="footer">A story still unfolding.</span></p>
+            <a href="#top" class="back-to-top"><span data-i18n="backToTop">Back to top</span><span aria-hidden="true">↑</span></a>
         </div>
     </footer>
 </body>
